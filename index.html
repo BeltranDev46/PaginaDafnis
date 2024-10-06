@@ -14,14 +14,18 @@
         <button type="button" class="buttons" onclick="showPage(1)">
           iPhone 16
         </button>
-        <button type="button" class="buttons" onclick="showPage(2)">IDK</button>
-        <button type="button" class="buttons" onclick="showPage(3)">IDK</button>
+        <button type="button" class="buttons" onclick="showPage(2)">
+          Luis
+        </button>
+        <button type="button" class="buttons" onclick="showPage(3)">
+          Mauro
+        </button>
         <button type="button" class="buttons" onclick="showPage(4)">IDK</button>
-        <button type="button" class="buttons" onclick="showPage(5)">IDK</button>
       </nav>
     </header>
-
+    <!-- Contenido a mostrarse cuando se presione un boton  -->
     <main class="page1" id="page1">
+      <!-- Pagina de html cargada desde la misma pagina -->
       <iframe
         src="./iPhone16.html"
         frameborder="0"
@@ -29,10 +33,18 @@
       ></iframe>
     </main>
     <main class="page2 hidden" id="page2">
-      <iframe src="" frameborder="0" onload="resizeIframe(this)"></iframe>
+      <iframe
+        src="./pagina.html"
+        frameborder="0"
+        onload="resizeIframe(this)"
+      ></iframe>
     </main>
     <main class="page3 hidden" id="page3">
-      <iframe src="" frameborder="0" onload="resizeIframe(this)"></iframe>
+      <iframe
+        src="./paginaMauro.html"
+        frameborder="0"
+        onload="resizeIframe(this)"
+      ></iframe>
     </main>
     <main class="page4 hidden" id="page4">
       <iframe src="" frameborder="0" onload="resizeIframe(this)"></iframe>
