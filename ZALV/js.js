@@ -1,5 +1,4 @@
 const showPage = (pageEntered) => {
-  showNavigator();
   const pages = {};
   const allPages = document.querySelectorAll('main[id^="page"]');
 
