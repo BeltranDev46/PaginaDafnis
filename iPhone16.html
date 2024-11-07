@@ -4,7 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iPhone 16</title>
+    <style>
+      /* Estilos globales */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      /* Estilo del contenedor principal */
+      main {
+        padding: 20px;
+        text-align: justify;
+      }
+
+      p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      /* Estilos para imágenes */
+      img {
+        max-width: 100%;
+        height: auto;
+        margin: 15px 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Estilo para el video */
+      video {
+        max-width: 100%;
+        display: block;
+        margin: 20px auto;
+      }
+
+      /* Estilos para los títulos en negrita */
+      b {
+        color: #333;
+      }
+
+      /* Estilo para el párrafo que contiene el "iPhone 16" */
+      i {
+        color: #007aff;
+      }
+
+      /* Media Query para pantallas pequeñas (smartphones) */
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 1.5rem; /* Ajustar tamaño de fuente en pantallas pequeñas */
+        }
+
+        main {
+          padding: 10px;
+        }
+
+        img {
+          max-width: 90%; /* Limitar el ancho de las imágenes en pantallas pequeñas */
+        }
+
+        video {
+          max-width: 90%; /* Limitar el ancho del video en pantallas pequeñas */
+        }
+      }
+
+      /* Media Query para pantallas medianas (tablets) */
+      @media (max-width: 1024px) {
+        header h1 {
+          font-size: 1.8rem; /* Ajustar tamaño de fuente en tabletas */
+        }
+
+        main {
+          padding: 15px;
+        }
+
+        img {
+          max-width: 95%; /* Limitar el ancho de las imágenes en tabletas */
+        }
+
+        video {
+          max-width: 95%; /* Limitar el ancho del video en tabletas */
+        }
+      }
+    </style>
   </head>
+
   <body>
     <header>
       <h1><b>Introducing the iPhone 16: Redefining Innovation</b></h1>
@@ -17,7 +114,11 @@
         to life with stunning clarity and vibrant colors, offering an immersive
         viewing experience that redefines visual quality.
       </p>
-      <img src="./assets/iPhone16.png" height="200" />
+      <img
+        src="./assets/iPhone16.png"
+        height="200"
+        alt="iPhone 16 10K Display"
+      />
       <p>
         Capture every moment in breathtaking detail with the groundbreaking
         <b>100-megapixel camera</b>. Equipped with advanced computational
@@ -27,7 +128,7 @@
         want to document your daily life, the <i>iPhone 16</i> delivers stunning
         results every time.
       </p>
-      <img src="./assets/AIPhone16.png" height="200" />
+      <img src="./assets/AIPhone16.png" height="200" alt="iPhone 16 Camera" />
       <p>
         Say goodbye to battery anxiety! With an incredible
         <b>battery life of up to 10 days</b> on a single charge, the
@@ -36,7 +137,11 @@
         graphics-intensive games, or staying connected on the go, you can do so
         without constantly reaching for a charger.
       </p>
-      <img src="./assets/iPhone16Battery.png" height="200" />
+      <img
+        src="./assets/iPhone16Battery.png"
+        height="200"
+        alt="iPhone 16 Battery"
+      />
       <p>
         In a world where convenience is paramount, the
         <i>iPhone 16</i> introduces a revolutionary
@@ -46,7 +151,11 @@
         feature transforms the way we think about travel and connectivity,
         making the impossible a reality.
       </p>
-      <img src="./assets/iPhone16BG16.png" height="200" />
+      <img
+        src="./assets/iPhone16BG16.png"
+        height="200"
+        alt="iPhone 16 Teleportation"
+      />
       <p>
         The <i>iPhone 16</i> is not just a smartphone; it’s a glimpse into the
         future of technology. With its cutting-edge features, stunning design,
@@ -59,6 +168,7 @@
         poster="./assets/AIPhone16.png"
         height="300"
         controls
+        alt="iPhone 16 Presentation Video"
       ></video>
     </main>
   </body>

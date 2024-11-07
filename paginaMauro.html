@@ -1,44 +1,61 @@
-<!--Declara el tipo de documento como HTML5-->
+<!-- Declara el tipo de documento como HTML5 -->
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!--Establece codificación de caracteres en UTF-8-->
+    <!-- Establece codificación de caracteres en UTF-8 -->
     <meta charset="UTF-8" />
 
-    <!--Asegura que el diseño sea adaptable a dispositivos móviles-->
+    <!-- Asegura que el diseño sea adaptable a dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Descripción de la página -->
     <meta name="description" content="Página sencilla sobre el Apple Watch" />
+
     <title>Apple Watch</title>
+
     <style>
+      /* Estilos generales para la página */
       body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
         margin: 0;
         padding: 0;
       }
+
+      /* Estilo para el encabezado de la página */
       header {
         background-color: #333;
         color: white;
         padding: 10px 0;
         text-align: center;
       }
+
+      /* Estilos para la barra de navegación */
       nav {
         background-color: #444;
         color: white;
         padding: 10px;
         text-align: center;
       }
+
+      /* Estilo para los enlaces dentro de la barra de navegación */
       nav a {
         color: white;
         text-decoration: none;
         margin: 0 15px;
       }
+
+      /* Contenedor general para el contenido de la página */
       .container {
         padding: 20px;
       }
+
+      /* Estilo para el título principal */
       h1 {
         color: #333;
       }
+
+      /* Estilos para las secciones de contenido (article) */
       article {
         background-color: white;
         padding: 20px;
@@ -46,6 +63,8 @@
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
+
+      /* Estilo para el pie de página */
       footer {
         background-color: #333;
         color: white;
@@ -55,23 +74,64 @@
         width: 100%;
         bottom: 0;
       }
+
+      /* Media Queries para dispositivos pequeños (smartphones) */
+      @media (max-width: 600px) {
+        nav {
+          padding: 8px; /* Menor espacio en la navegación */
+        }
+
+        nav a {
+          margin: 0 8px; /* Espaciado reducido entre enlaces */
+          font-size: 0.9em; /* Reducir tamaño de texto en los enlaces */
+        }
+
+        .container {
+          padding: 10px; /* Reducir padding en dispositivos pequeños */
+        }
+
+        article {
+          padding: 15px; /* Reducir padding de los artículos */
+          margin: 10px 0; /* Reducir márgenes */
+        }
+
+        footer {
+          padding: 8px 0; /* Reducir padding en el pie de página */
+        }
+      }
+
+      /* Media Queries para tabletas y pantallas medianas */
+      @media (max-width: 1024px) {
+        nav a {
+          margin: 0 12px; /* Reducir margen entre enlaces en pantallas más grandes */
+        }
+
+        .container {
+          padding: 15px; /* Ajustar padding para pantallas medianas */
+        }
+
+        article {
+          padding: 18px; /* Ajustar padding de los artículos */
+        }
+      }
     </style>
   </head>
   <body>
-    <!--Contiene el título principal de la página-->
+    <!-- Contiene el título principal de la página -->
     <header>
       <h1>Bienvenidos al Mundo del Apple Watch</h1>
     </header>
 
-    <!--Incluye enlaces internos a las secciones de la página-->
+    <!-- Incluye enlaces internos a las secciones de la página -->
     <nav>
       <a href="#historia">Historia</a>
       <a href="#caracteristicas">Características</a>
       <a href="#modelos">Modelos</a>
     </nav>
 
+    <!-- Contenedor para las secciones de la página -->
     <div class="container">
-      <!--Cada sección de contenido principal está envuelta en una etiqueta <article> de HTML5-->
+      <!-- Cada sección de contenido principal está envuelta en una etiqueta <article> de HTML5 -->
       <article id="historia">
         <h2>Historia del Apple Watch</h2>
         <p>
@@ -84,7 +144,7 @@
       <article id="caracteristicas">
         <h2>Características Principales</h2>
 
-        <!--Lista no ordenada que describe las características del Apple Watch-->
+        <!-- Lista no ordenada que describe las características del Apple Watch -->
         <ul>
           <li>Monitoreo de ritmo cardíaco</li>
           <li>Notificaciones en tiempo real</li>
@@ -104,7 +164,7 @@
       </article>
     </div>
 
-    <!--Información final de la página-->
+    <!-- Información final de la página -->
     <footer>
       <p>&copy; 2024 Apple Watch Fans</p>
     </footer>
